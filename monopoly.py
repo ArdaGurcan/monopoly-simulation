@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 import random
 
 square = 1
-n = 100000
+n = 1000000
 
 probabilities = [0 for _ in range(40)]
 
