@@ -65,11 +65,11 @@ for _ in range(n):
     probabilities[square - 1] += 1/n  # COUNT
 
 
-plt.bar([k+1 for k in range(40)], probabilities, color='limegreen')  # PLOT
 print(probabilities)
+plt.figure(figsize=(14, 9), dpi=100)
 plt.title("Probabilities for Ending Up on Each of the Squares in Monopoly")
 plt.xlabel("Index of Square")
 plt.ylabel("Probability of Landing on Square")
 plt.xticks([k+1 for k in range(40)])
-plt.show()
+plt.bar([k+1 for k in range(40)], probabilities, color='limegreen')  # PLOT
 plt.savefig("./bar_plot.png")
